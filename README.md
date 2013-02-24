@@ -104,7 +104,7 @@ goodscsv.toJSON({
 引入schema类
 
 ```javascript
-Schema = require('../index').schema;
+Schema = require('yi-convert').schema;
 ```
 
 初始化Schema结构
