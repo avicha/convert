@@ -1,0 +1,32 @@
+{
+  "name": "yi-convert",
+  "version": "1.0.0",
+  "description": "提供了一些常用格式如csv，json的转换和schema的数据规范化",
+  "keywords": [
+    "csv",
+    "json",
+    "schema",
+    "format"
+  ],
+  "author": "avicha",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avicha/convert.git"
+  },
+  "main": "./index",
+  "engines": {
+    "node": ">= 0.4.x"
+  },
+  "dependencies": {
+    "yi-fs": "1.0.0",
+    "yi-csv":"1.0.0",
+    "underscore":"1.4.4",
+    "iconv-lite":"0.2.7",
+    "log4js":"0.5.6",
+    "date-utils":"1.2.12",
+    "mongodb":"1.2.*"
+  },
+  "devDependencies": {
+    "coffee-script": "1.4.0"
+  }
+}
