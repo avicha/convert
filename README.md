@@ -1,7 +1,7 @@
 convert
 =======
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个用于各种格式转换的模块，暂时提供了把json对象写成csv文件和把csv读出成为json两个方法，同时提供了schema格式化数据的方法，以后将会提供更多转换方法。
+这是一个用于各种格式转换的模块，暂时提供了把json对象写成csv文件和把csv读出成为json两个方法，同时提供了schema格式化数据的方法，以后将会提供更多转换方法。
 ##安装
 <pre>
     npm install yi-convert
