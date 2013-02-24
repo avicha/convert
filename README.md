@@ -41,7 +41,7 @@ jsonArr.fields({
         'name': '名字',
         'age': '年龄',
         'sex': '性别'
-      })；
+      });
 ```
 
 使用gbk编码写成csv文件
