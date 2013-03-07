@@ -2,7 +2,6 @@ _ = require 'underscore'
 fs = require 'yi-fs'
 path = require 'path'
 iconv = require 'iconv-lite'
-logger = require('log4js').getLogger __filename
 csv = require 'yi-csv'
 convert = {}
 ###*
@@ -66,7 +65,7 @@ class json2csv
                 callback err,content if callback
             else
                 fs.writeFile target,buf,(err)->
-                    logger.info "write json to file success."
+                    console.log  "write json to file success."
                     callback err,content if callback
 convert.json2csv = json2csv
 ###*
@@ -75,7 +74,7 @@ convert.json2csv = json2csv
 class csv2json
     constructor : (csvfile)->
         if !fs.existsSync csvfile
-            logger.error csvfile
+            console.error csvfile
             throw "please input the valid csvfile param."
         @csvfile = csvfile
         @
@@ -225,7 +224,7 @@ class schema
             catch e
                 error = e
         if error
-            logger.error error
+            console.error error
             return
         else
             return obj

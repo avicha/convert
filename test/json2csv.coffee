@@ -1,6 +1,5 @@
 json2csv = require('../index').json2csv
 async = require 'async'
-logger = require('log4js').getLogger __filename
 async.parallel
     'no fields transform':(callback)->
         jsonArr = new json2csv [{uid:'123456',name:'avicha',age:23,sex:'boy'},{uid:'654321',name:'yi',age:'19',sex:'girl'}]
@@ -32,6 +31,6 @@ async.parallel
             callback err
 ,(err,results)->
     if err
-        logger.error err
+        console.error err
     else
-        logger.info "test end."
+        console.log "test end."

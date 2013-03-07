@@ -1,6 +1,5 @@
 csv2json = require('../index').csv2json
 async = require 'async'
-logger = require('log4js').getLogger __filename
 async.parallel
     'no fields transform':(callback)->
         goodscsv = new csv2json('../csv/goods.csv')
@@ -21,6 +20,6 @@ async.parallel
             callback err
 ,(err,results)->
     if err
-        logger.error err
+        console.error err
     else
-        logger.info "test end."
+        console.log "test end."
