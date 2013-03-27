@@ -21,7 +21,7 @@ class json2csv
         self = @
         text = []
         if !_.isArray self.jsonArr
-            throw new Exception "the json input must be an array."
+            throw new Error "the json input must be an array."
         self.jsonArr.forEach (json)->
             if self.map
                 if _.isFunction self.map

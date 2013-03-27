@@ -42,7 +42,7 @@
       self = this;
       text = [];
       if (!_.isArray(self.jsonArr)) {
-        throw new Exception("the json input must be an array.");
+        throw new Error("the json input must be an array.");
       }
       self.jsonArr.forEach(function(json) {
         var item;

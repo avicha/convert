@@ -1,6 +1,6 @@
 {
   "name": "yi-convert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "提供了一些常用格式如csv，json的转换和schema的数据规范化",
   "keywords": [
     "csv",
